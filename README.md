@@ -96,3 +96,14 @@ npm run prepare
 npx husky add .husky/pre-commit "npm run pre-commit"
 npm pkg set scripts.pre-commit="lint-staged && git add -A ."
 ```
+
+Setup `next-i18next` (<https://github.com/i18next/next-i18next>):
+
+```bash
+npm i next-i18next react-i18next i18next
+```
+
+```bash
+mkdir -p public/locales/{en,de,bg}
+touch public/locales/{en,de,bg}/common.json
+```

@@ -1,11 +1,24 @@
+import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "../styles/Home.module.css";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+
+export async function getStaticProps({ locale }: any) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
+}
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+const Home: NextPage = () => {
+  const { t } = useTranslation("common");
+
   return (
     <>
       <Head>
@@ -53,6 +66,14 @@ export default function Home() {
               priority
             />
           </div>
+        </div>
+
+        <div className={styles.card}>
+          <h2 className={inter.className}>
+            {t("global.websiteTitle")}
+            <span>-&gt;</span>
+          </h2>
+          <p className={inter.className}>{t("global.websiteDescription")}</p>
         </div>
 
         <div className={styles.grid}>
@@ -116,4 +137,6 @@ export default function Home() {
       </main>
     </>
   );
-}
+};
+
+export default Home;
