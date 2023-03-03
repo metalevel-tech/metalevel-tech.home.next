@@ -14,6 +14,10 @@
     "*.{ts,tsx}": "eslint --fix",
     "*.css": "stylelint --fix"
   },
+  "engines": {
+    "node": "19.7.0",
+    "npm": "9.5.0"
+  },
   "dependencies": {
     "i18next": "^22.4.10",
     "next": "13.2.3",
