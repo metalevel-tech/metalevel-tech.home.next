@@ -15,8 +15,8 @@
     "*.css": "stylelint --fix"
   },
   "engines": {
-    "node": "19.7.0",
-    "npm": "9.5.0"
+    "node": "18.x",
+    "npm": "9.x"
   },
   "dependencies": {
     "i18next": "^22.4.10",

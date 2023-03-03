@@ -34,7 +34,7 @@ const Home: NextPage = () => {
             <code className={styles.code}>pages/index.tsx</code>
           </p>
           <div>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="#" rel="noopener noreferrer">
               By{" "}
               <Image
                 src="/vercel.svg"
@@ -68,21 +68,21 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        <div className={styles.card}>
+        <a
+          href="https://next.metalevel.tech"
+          rel="noopener noreferrer"
+          target="_blank"
+          className={styles.card}
+        >
           <h2 className={inter.className}>
             {t("global.websiteTitle")}
             <span>-&gt;</span>
           </h2>
           <p className={inter.className}>{t("global.websiteDescription")}</p>
-        </div>
+        </a>
 
-        <div className={styles.grid}>
-          <a
-            href="#"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        {/* <div className={styles.grid}>
+          <a href="#" className={styles.card} rel="noopener noreferrer">
             <h2 className={inter.className}>
               Docs <span>-&gt;</span>
             </h2>
@@ -91,12 +91,7 @@ const Home: NextPage = () => {
             </p>
           </a>
 
-          <a
-            href="#"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="#" className={styles.card} rel="noopener noreferrer">
             <h2 className={inter.className}>
               Learn <span>-&gt;</span>
             </h2>
@@ -105,12 +100,7 @@ const Home: NextPage = () => {
             </p>
           </a>
 
-          <a
-            href="#"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="#" className={styles.card} rel="noopener noreferrer">
             <h2 className={inter.className}>
               Templates <span>-&gt;</span>
             </h2>
@@ -119,12 +109,7 @@ const Home: NextPage = () => {
             </p>
           </a>
 
-          <a
-            href="#"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="#" className={styles.card} rel="noopener noreferrer">
             <h2 className={inter.className}>
               Deploy <span>-&gt;</span>
             </h2>
@@ -133,7 +118,7 @@ const Home: NextPage = () => {
               with&nbsp;Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
     </>
   );
