@@ -109,3 +109,14 @@ npm i next-i18next react-i18next i18next
 mkdir -p public/locales/{en,de,bg}
 touch public/locales/{en,de,bg}/common.json
 ```
+
+Additional packages:
+
+```bash
+npm i react-cookie-consent
+npm i react-hotjar
+npm i react-intersection-observer
+npm i swiper
+npm i react-scroll
+npm i @types/react-scroll --save-dev
+```
